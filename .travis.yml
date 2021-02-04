@@ -1,0 +1,8 @@
+dist: xenial
+arch:
+  - amd64
+  - ppc64le
+language: java
+script:
+  - mvn clean:clean 
+  - mvn install -Dmaven.javadoc.skip=true -B -V
